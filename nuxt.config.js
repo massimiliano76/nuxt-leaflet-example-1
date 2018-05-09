@@ -27,16 +27,11 @@ module.exports = {
   css: ["leaflet/dist/leaflet.css"],
 
   /*
-  ** Files that require inclusion in the vendor bundle
-  */
-  vendor: ["vue2-leaflet"],
-
-  /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     {
-      src: "~/plugins/leaflet-map",
+      src: "~/plugins/leaflet",
       ssr: false
     }
   ],

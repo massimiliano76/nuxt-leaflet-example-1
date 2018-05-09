@@ -1,5 +1,6 @@
 <template>
-  <div style="min-height: 100vh; min-width: 100vh">
+  <div>
+    <b-button variant="danger" @click="logPosition" >Log position</b-button>
     <no-ssr>
       <l-map class="mini-map" :zoom=13 :center="position">
         <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>
@@ -27,10 +28,10 @@ export default {
 </script>
 
 <style src="leaflet/dist/leaflet.css"></style>
-<style>
+<style >
 .mini-map {
   width: 100%;
-  height: 100vh !important;
+  height: 600px !important;
 }
 </style>
 
