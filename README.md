@@ -68,7 +68,7 @@ Add the plugin to your `nuxt.config.js` file. Set SSR to false:
 ** Plugins to load before mounting the App
 */
 plugins: [
-  {https://github.com/sebnyberg/nuxt-leaflet-example
+  {
     src: "~/plugins/leaflet",
     ssr: false
   }
