@@ -5,6 +5,7 @@ Example of how you can combine Nuxt.JS with Vue2-Leaflet.
 Run the project with
 
 ```bash
+yarn install
 yarn dev
 ```
 
