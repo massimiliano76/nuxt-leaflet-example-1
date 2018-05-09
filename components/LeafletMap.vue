@@ -1,31 +1,36 @@
 <template>
-  <no-ssr>
-    <l-map class="mini-map" :zoom=13 :center="[47.413220, -1.219482]">
-      <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>
-      <l-marker :lat-lng="[47.413220, -1.219482]"></l-marker>
-    </l-map>
-  </no-ssr>
+  <div style="min-height: 100vh; min-width: 100vh">
+    <no-ssr>
+      <l-map class="mini-map" :zoom=13 :center="position">
+        <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>
+        <l-marker :lat-lng="position" :draggable="draggable">
+          <l-popup :content="popupContent"></l-popup>
+        </l-marker>
+      </l-map>
+    </no-ssr>
+  </div>
 </template>
 
 <script>
-// let Vue2Leaflet = {};
-// if (process.browser) {
-//   Vue2Leaflet = require("vue2-leaflet");
-// }
-// export default {
-//   components: {
-//     "v-map": Vue2Leaflet.Map,
-//     "v-tilelayer": Vue2Leaflet.TileLayer,
-//     "v-marker": Vue2Leaflet.Marker
-//   }
-// };
+export default {
+  data: () => ({
+    position: [55.607741796855734, 13.018133640289308],
+    draggable: true,
+    popupContent: "Sentian HQ"
+  }),
+  methods: {
+    logPosition() {
+      console.log(this.position);
+    }
+  }
+};
 </script>
 
 <style src="leaflet/dist/leaflet.css"></style>
 <style>
-.mni-map {
+.mini-map {
   width: 100%;
-  height: 500px !important;
+  height: 100vh !important;
 }
 </style>
 

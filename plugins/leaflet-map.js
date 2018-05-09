@@ -1,12 +1,3 @@
-// import Vue from "vue";
-
-// if (process.browser) {
-//   window.onNuxtReady(() => {
-//     const VueFullCalendar = require("vue-fullcalendar");
-//     Vue.use(VueFullCalendar);
-//   });
-// }
-
 import Vue from "vue";
 import Vue2Leaflet from "vue2-leaflet";
 

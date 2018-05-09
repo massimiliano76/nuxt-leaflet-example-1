@@ -1,6 +1,6 @@
 <template>
-  <section class="container">
-    <leaflet-map id="leafletmap"></leaflet-map>
+    <section>
+    <leaflet-map style="min-height: 100vh; min-width: 100vh"></leaflet-map>
   </section>
 </template>
 
@@ -13,17 +13,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-#leafletmap {
-  min-height: 100vh;
-  min-width: 100vh;
-}
-</style>
