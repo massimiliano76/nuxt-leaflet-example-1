@@ -13,6 +13,8 @@
 </template>
 
 <script>
+import mapData from "~/static/test.json";
+
 export default {
   data: () => ({
     position: [55.607741796855734, 13.018133640289308],
@@ -21,17 +23,17 @@ export default {
   }),
   methods: {
     logPosition() {
-      console.log(this.position);
+      console.log(mapData);
     }
   }
 };
 </script>
 
 <style src="leaflet/dist/leaflet.css"></style>
-<style >
+<style>
 .mini-map {
   width: 100%;
-  height: 600px !important;
+  height: 100vh !important;
 }
 </style>
 

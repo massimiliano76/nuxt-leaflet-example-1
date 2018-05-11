@@ -1,0 +1,14 @@
+{
+  "something": "nothing",
+  "someNumber": 123,
+  "array": [
+    {
+      "test1": true,
+      "test2": "hello"
+    },
+    {
+      "test1": false,
+      "test2": "bye"
+    }
+  ]
+}
